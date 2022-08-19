@@ -1,0 +1,46 @@
+/* Setting default box-sizing to border-box, height to 100% for percentage based sizing */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* So all child elements inherit box-sizing of their parents */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Setting default margin to 0 */
+* {
+    margin: 0;
+}
+
+/* Hide Custom Elements Which Haven't been defined */
+:not(:defined) {
+    visibility: hidden;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+input, textarea, button, select {
+    font-family: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}  
+
+a, a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
